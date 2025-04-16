@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stay Dry Reward</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.png" type="image/png">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log("Service Worker Registered"));
+    }
+  </script>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin: 2rem; }
+    h1 { color: #4CAF50; }
+    button { padding: 1rem; font-size: 1rem; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>Stay Dry Reward</h1>
+  <p>Elke dag droog? Zet een kruisje!</p>
+  <p>Voeg deze app toe aan je startscherm voor gemakkelijke toegang.</p>
+</body>
+</html>
